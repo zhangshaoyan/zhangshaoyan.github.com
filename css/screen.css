@@ -318,8 +318,8 @@ body:after {
     position: absolute;
     top: 250px;
     left: 0;
-    width: 556px;
-    height: 320px;
+    width: 560px;
+    height: 312px;
     z-index: 1000;
     border: 5px solid #1f1f1f;
 }
