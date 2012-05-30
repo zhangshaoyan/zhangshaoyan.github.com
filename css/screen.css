@@ -162,7 +162,7 @@ sup {
 }
 
 #nav li a {
-    color: #aaa;
+    color: #333;
     text-decoration: none;
     font-family: Times, serif;
     text-transform: uppercase;
@@ -172,7 +172,11 @@ sup {
 }
 
 #nav li a.active {
-    color: #e7bb5f;
+    color: gray;
+}
+
+#nav li a:hover{
+    color: gray;
 }
 
 /*  Buy Album
