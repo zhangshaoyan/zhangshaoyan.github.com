@@ -130,6 +130,9 @@ sup {
     font-weight: bold;
 }
 
+/*  Nav
+------------------------------------------------------------------------ */
+
 #footer ul {
     float: left;
     width: 100%;
@@ -140,7 +143,20 @@ sup {
     position: relative;
     float: left;
     display: inline;
-    margin: 0 21px 0;
+    margin: 0 5px 0;
+}
+
+#footer ul li a {
+    color: #333;
+    text-decoration: none;
+    font-family: Times, serif;
+    text-transform: uppercase;
+    margin: 0 8px 0;
+    font-size: 12px;
+}
+
+#footer ul li a.active {
+    color: #e7bb5f;
 }
 
 /*  Buy Album
@@ -204,39 +220,6 @@ body:after {
     left: -36px;
 }
 
-
-/*  Nav
------------------------------------------------------------------------- */
-
-#nav {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 565px;
-    height: 24px;
-    color: #fff;
-    z-index: 1000;
-    background: url('../img/bg-nav.png') no-repeat 100% 100%;
-    text-align: center;
-}
-
-#nav ul li {
-    display: inline;
-}
-
-#nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-family: Times, serif;
-    text-transform: uppercase;
-    margin: 0 8px 0;
-    font-size: 12px;
-}
-
-#nav ul li a.active {
-    color: #e7bb5f;
-}
-
 /*  Mailing-list
 ------------------------------------------------------------------------ */
 
@@ -295,7 +278,7 @@ body:after {
 
 #home-page #movie-title {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 32px;
     z-index: 1000;
 }
@@ -313,13 +296,12 @@ body:after {
 
 #home-page #video {
     position: absolute;
-    top: 160px;
+    top: 215px;
     left: 0;
-    width: 581px;
-    height: 331px;
-    padding: 11px 0 0 9px;
-    background: url('../img/bg-video.png') no-repeat;
+    width: 556px;
+    height: 350px;
     z-index: 1000;
+    border: 5px solid #1f1f1f;
 }
 
 #btn-review-latimes {
@@ -340,7 +322,6 @@ body:after {
     height: 20px;
     overflow: hidden;
     z-index: 10000;
-    background-color:black;
     text-align:center;
     margin-top:10px;
 }
