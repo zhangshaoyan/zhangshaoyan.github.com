@@ -29,6 +29,12 @@
                     <img src="http://farm8.staticflickr.com/7234/7299402394_287d10b500_b.jpg" width="850" height="645" alt="" />
                     <img src="http://farm9.staticflickr.com/8150/7299372258_9019c8a3f7_b.jpg" width="850" height="645" alt="" />
                     <img src="http://farm8.staticflickr.com/7212/7299371716_a8b07e7e0f_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8005/7301752052_74e1689e55_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm8.staticflickr.com/7073/7301757046_cce9ba30bd_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm8.staticflickr.com/7073/7301756044_bd4361227c_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8163/7301753518_ef351bf999_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8004/7301754834_67872143ec_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8027/7301758040_34c473c3ed_b.jpg" width="850" height="645" alt="" />
                 </div>
             </div><!-- #slideshow -->
 
@@ -36,8 +42,6 @@
 
             <div id="video">
                 <div id="video-object">
-                    <embed type="application/x-shockwave-flash" width="556" height="350" name="cmp" src="http://hsw00.com/mini/cmp?src=http%3A%2F%2Ff.youku.com%2Fplayer%2FgetFlvPath%2Fsid%2F00_00%2Fst%2Fflv%2Ffileid%2F03000201004FC5B28BF691012AEF00A3022A2D-4F2F-7025-2B8E-BF70D755E4F2%3FK%3De4bc7b8dd76e5eb8261c5d10%2Ck2%3A10677e739ff351047&skin_src=qqvideo&auto_play=1&play_mode=0&mixer_filter=1&mixer_displace=1&mixer_id=-1&volume=1&context_menu=0&show_tip=0&plugins_disabled=1&cc=4838" quality="high"  allowfullscreen="true" ></embed>
-                    <!-- <embed type="application/x-shockwave-flash" src="http://kingsspeech.com/player/player.swf" width="556" height="305" style="undefined" id="mpl" name="mpl" quality="high" allowfullscreen="true" allowscriptaccess="always" wmode="opaque" flashvars="http%3A%2F%2Ff.youku.com%2Fplayer%2FgetFlvPath%2Fsid%2F00_00%2Fst%2Fflv%2Ffileid%2F03000201004FC5B28BF691012AEF00A3022A2D-4F2F-7025-2B8E-BF70D755E4F2%3FK%3De4bc7b8dd76e5eb8261c5d10%2Ck2%3A10677e739ff351047&skin=http://kingsspeech.com/player/glow.xml&controlbar=over&dock=false&autostart=true&repeat=always"> -->
                 </div><!-- #video-object -->
             </div><!-- #video -->
 
@@ -80,23 +84,34 @@
         </div><!-- #page -->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script src="js/swfobject.js"></script>
+        <!-- <script src="js/swfobject.js"></script> -->
         <script src="js/default.js"></script>
         <script src="js/init.js"></script>
+        <script type='text/javascript' src='player/jwplayer.js'></script>
+        <script type='text/javascript'>
+        jwplayer('video-object').setup({
+            'flashplayer': 'player/player.swf',
+            'file': 'http://59.53.71.79/youku/656AE5C4CA4A810CF739120C7/03000201004FC5B28BF691012AEF00A3022A2D-4F2F-7025-2B8E-BF70D755E4F2.flv',
+            'controlbar': 'over',
+            'skin': 'player/glow.zip',
+            'width': '556',
+            'height': '320'
+        });
+        </script>
     <!--[if lt IE 7]>
     <script type="text-javascript" src="js/pngfix.js"></script>
     <![endif]-->
 
     <div id="preload">
-        <img src="img/slide-001.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-002.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-003.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-004.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-005.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-006.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-007.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-008.jpg" width="850" height="645" alt="" />
-        <img src="img/slide-009.jpg" width="850" height="645" alt="" />
+        <img src="http://farm8.staticflickr.com/7234/7299402394_287d10b500_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8150/7299372258_9019c8a3f7_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm8.staticflickr.com/7212/7299371716_a8b07e7e0f_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8005/7301752052_74e1689e55_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm8.staticflickr.com/7073/7301757046_cce9ba30bd_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm8.staticflickr.com/7073/7301756044_bd4361227c_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8163/7301753518_ef351bf999_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8004/7301754834_67872143ec_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8027/7301758040_34c473c3ed_b.jpg" width="850" height="645" alt="" />
     </div><!-- #preload -->
     <div style="z-index:-1;width:100%;height:645px; position:absolute;top:0px;left:0px;background-color:black"></div>
 </body>

@@ -106,7 +106,7 @@ $("#btn-video a").click(function(e){
 
 
 // Image gallery
-Galleria.loadTheme('themes/classic/galleria.classic.js');
+// Galleria.loadTheme('themes/classic/galleria.classic.js');
 $("#photo-gallery").galleria({
     image_crop: true,
     width: 578,
