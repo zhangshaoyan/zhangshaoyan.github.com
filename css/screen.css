@@ -336,8 +336,8 @@ body:after {
     position: absolute;
     top: 160px;
     left: 0;
-    width: 543px;
-    height: 40px;
+    width: 565px;
+    height: 20px;
     overflow: hidden;
     z-index: 10000;
     background-color:black;
