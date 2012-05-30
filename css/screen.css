@@ -1,0 +1,820 @@
+/*  Reset styles see: http://meyerweb.com/eric/tools/css/reset/ 
+------------------------------------------------------------------------ */  
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { 	margin: 0; 	padding: 0; 	border: 0; 	outline: 0; 	font-size: 100%; 	vertical-align: baseline; 	background: transparent; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; }  /* remember to define focus styles! */ :focus { 	outline: 0; }  /* remember to highlight inserts somehow! */ ins { 	text-decoration: none; } del { 	text-decoration: line-through; }  /* tables still need 'cellspacing="0"' in the markup */ table { 	border-collapse: collapse; 	border-spacing: 0; }
+
+/*  Everything else
+------------------------------------------------------------------------ */
+
+body {
+    font: 15px/1.22 Times, serif;
+    /*background-color: black;*/
+    color: #ddd;
+    font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,"Lucida Grande","Luxi Sans",Arial,sans-serif;
+}
+
+#page {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#page .wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 565px;
+    height: 385px;
+    padding-right: 10px;
+    z-index: 1000;
+    overflow: auto;
+    text-align: justify;
+}
+
+#main p {
+    margin: 0 0 12px;
+}
+
+#start-date {
+    _zoom: 1;
+    position: absolute;
+    top: 50px;
+    right: 390px;
+    z-index: 1010;
+    padding: 4px 8px;
+    text-align: right;
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #404051;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    behavior: url(js/PIE.htc);
+}
+
+#start-date a {
+    color: #E7BB5F;
+    text-decoration: none;
+}
+
+#start-date a:hover {
+    color: #fff;
+}
+
+sup {
+    font-size: 50%;
+    vertical-align: top;
+    text-transform: none !important;
+}
+
+/*  Footer
+------------------------------------------------------------------------ */
+
+#footer {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    z-index: 1000;
+}
+
+#footer #links-one {
+    font-size: 14px;
+    clear: both;
+}
+
+#footer .footer-links {
+    margin: 0 0 12px;
+    color: #808080;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+#footer .footer-links a {
+    color: #808080;
+    text-decoration: none;
+}
+
+#logo-weinstein {
+    position: absolute;
+    top: 135px;
+    right: 135px;
+    z-index: 1000;
+}
+
+#btn-tix {
+    width: 280px;
+}
+
+#btn-tix a {
+    display: block;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+#btn-tix h4 {
+    position: relative;
+    margin: 0 0 12px;
+    color: #000;
+    font: 30px/1 Times, serif;
+    font-weight: bold;
+}
+
+#footer ul {
+    float: left;
+    width: 100%;
+    margin: 0 0 24px;
+}
+
+#footer ul li {
+    position: relative;
+    float: left;
+    display: inline;
+    margin: 0 21px 0;
+}
+
+/*  Buy Album
+------------------------------------------------------------------------ */
+
+body:after {
+    content: url(../img/bg-buy-album.png);
+    position: absolute;
+    left: -9999px;
+    top: 0;
+}
+
+#buy-album-overlay {
+    display: none;
+    top: 225px;
+    width: 730px;
+    height: 275px;
+    padding: 15px;
+    background: url('../img/bg-buy-album.png') no-repeat;
+    z-index: 10000;
+    
+    -moz-box-shadow: 5px 5px 15px #333;
+    -webkit-box-shadow: 5px 5px 15px #333;
+    box-shadow: 5px 5px 15px #333;
+    behavior: url(js/PIE.htc); 
+    
+}
+
+#buy-album-overlay .album-cover {
+    float: left;
+    width: 275px;
+    margin: 0 20px 0 0
+}
+
+#buy-album-overlay h4 {
+    margin: 0;
+    font-size: 36px;
+    color: #000;
+    vertical-align: top;
+}
+
+#buy-album-overlay p {
+    font-size: 15px;
+    margin: 0 0 24px;
+}
+
+#buy-album-overlay .section {
+    float: left;
+    width: 430px;
+    padding-top: 70px;
+    font-size: 30px;
+    color: #000;
+    vertical-align: top;
+    text-align: center;
+}
+
+#close-album {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: -36px;
+}
+
+
+/*  Nav
+------------------------------------------------------------------------ */
+
+#nav {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 565px;
+    height: 24px;
+    color: #fff;
+    z-index: 1000;
+    background: url('../img/bg-nav.png') no-repeat 100% 100%;
+    text-align: center;
+}
+
+#nav ul li {
+    display: inline;
+}
+
+#nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Times, serif;
+    text-transform: uppercase;
+    margin: 0 8px 0;
+    font-size: 12px;
+}
+
+#nav ul li a.active {
+    color: #e7bb5f;
+}
+
+/*  Mailing-list
+------------------------------------------------------------------------ */
+
+body:after {
+    content: url('../img/bg-elist.png');
+    display: none;
+}
+
+#mailing-list {
+    display: none;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 182px;
+    height: 103px;
+    padding: 8px 0;
+    background: url('../img/bg-elist.png') no-repeat;
+    z-index: 10000;
+}
+
+#ujkrdk-ujkrdk {
+    width: 160px;
+    height: 23px;
+    padding: 0 0 0 3px;
+    background: url('../img/input-txt.png') no-repeat;
+    border: 0;
+}
+
+.cm-ol-itihjj {
+    position: absolute;
+    top: 35px;
+    left: 4px;
+}
+
+#confirmation {
+    display: none;
+    color: #fff;
+}
+
+#close {
+    padding: 12px 0 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#close-elist {
+    position: absolute;
+    top: 1px;
+    left: -21px;
+    cursor: pointer;
+}
+
+
+/*  Movie title
+------------------------------------------------------------------------ */
+
+#home-page #movie-title {
+    position: absolute;
+    top: 60px;
+    left: 32px;
+    z-index: 1000;
+}
+
+
+#movie-title {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1000;
+}
+
+/*  Video
+------------------------------------------------------------------------ */
+
+#home-page #video {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 581px;
+    height: 331px;
+    padding: 11px 0 0 9px;
+    background: url('../img/bg-video.png') no-repeat;
+    z-index: 1000;
+}
+
+#btn-review-latimes {
+    position: absolute;
+    top: 178px;
+    left: 2px;
+    z-index: 1000;
+}
+
+/*  Quotes
+------------------------------------------------------------------------ */
+
+#quotes {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 543px;
+    height: 40px;
+    overflow: hidden;
+    z-index: 10000;
+    background-color:black;
+    text-align:center;
+    padding-top:10px;
+}
+
+#quotes-award {
+    position: absolute;
+    top: 550px;
+    left: 15px;
+    width: 543px;
+    height: 80px;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+/*  Slideshow
+------------------------------------------------------------------------ */
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 645px;
+}
+
+#slides {
+    position: absolute;
+    right: -160px;
+    width: 850px;
+    height: 645px;
+    overflow: hidden;
+}
+
+
+/*  Cast
+------------------------------------------------------------------------ */
+
+#bio-list {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 575px;
+    padding-right: 10px;
+    z-index: 1000;
+    color: #fff;
+    overflow: auto;
+    text-align: justify;
+}
+
+
+#bio-list li {
+    float: left;
+    display: block;
+    margin: 0 0 8px 14px;
+}
+
+body:after {
+    /* Pre-load bg-image and lg bio images */
+    display: none;
+    content: url('../img/bg-bio.png') url('../img/cast-anthony-andrews-lg.jpg') url('../img/cast-colin-firth-lg.jpg') url('../img/cast-dereck-jacobi-lg.jpg') url('../img/cast-dereck-jacobi-lg.jpg') url('../img/cast-geoffrey-rush-lg.jpg') url('../img/cast-guy-pearce-lg.jpg') url('../img/cast-helena-bonham-carter-lg.jpg') url('../img/cast-jennifer-ehle-lg.jpg') url('../img/cast-michael-gambon-lg.jpg') url('../img/cast-timothy-spall-lg.jpg')
+}
+
+#bio {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    height: 385px;
+    padding: 20px 20px 20px 20px;
+    margin-left: -380px;
+    background: url('../img/bg-bio.png') no-repeat;
+    z-index: 10000;
+}
+
+#bio .content {
+    width: 720px;
+    height: 385px;
+}
+
+#bio-txt {
+    float: right;
+    width: 435px;
+    height: 365px;
+    overflow: auto;
+    text-align: justify;
+}
+
+#bio .content h3 {
+    font-size: 21px;
+    margin: 0 0 12px;
+    text-align: left;
+    color: #fff;
+}
+
+#bio .content p {
+    width: 420px;
+    margin: 0 0 30px;
+}
+
+
+#bio .bio-image {
+    float: left;
+    display: inline;
+    width: 265px;
+    margin: 0 8px 0 0;
+}
+
+#close-bio {
+    position: absolute;
+    top: 0;
+    left: -45px;
+    cursor: pointer;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+/*  Creative
+------------------------------------------------------------------------ */
+
+#creative-list {
+    width: 545px;
+}
+
+#creative-list h3 {
+    padding-top: 24px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#creative-list h3.first {
+    padding-top: 0;
+}
+
+
+/*  Gallery
+------------------------------------------------------------------------ */
+
+#gallery {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 584px;
+    height: 430px;
+    padding-right: 10px;
+    z-index: 1000;
+    color: #fff;
+    overflow: hidden;
+    text-align: justify;
+    background: url('../img/bg-gallery.png') no-repeat;
+}
+
+#photo-gallery {
+    width: 584px;
+    height: 430px;
+}
+
+#photo-gallery img {
+    /* stop fouc, script will display first image */
+    display: none;
+}
+
+
+#preload {
+    /* Gallery images are preloaded on the index page  */
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+/* override galleria defaults */
+.galleria-container {
+    background: transparent !important;
+}
+
+.galleria-thumb-nav-left:hover,
+.galleria-thumb-nav-right:hover {
+    background-color: #2F2F3C;
+}
+
+#switch-galleries {
+    position: absolute;
+    top: 182px;
+    left: 2px;
+    z-index: 10000;
+}
+
+#switch-galleries li {
+    float: left;
+    width: 106px;
+    margin: 0 3px 0 0;
+}
+
+#btn-video a,
+#btn-photos a {
+    display: block;
+    float: left;
+    width: 106px;
+    height: 30px;
+    background: url('../img/btn-switch-gallery.png') no-repeat;
+    text-indent: -9999px;
+}
+
+#btn-video a {
+    background-position: -324px 0px;
+}
+
+#btn-video a.active-gallery {
+    background-position: -108px 0;
+}
+
+#btn-photos a {
+    background-position: -216px 0px;
+}
+
+#btn-photos a.active-gallery {
+    background-position: 0 0 !important;
+}
+
+
+/*  Video gallery
+------------------------------------------------------------------------ */
+
+#video-gallery {
+    width: 565px;
+    height: 400px;
+    margin: 15px 0;
+}
+
+#video-gallery-screen {
+    width: 556px;
+    height: 305px;
+    margin: 0 0 20px 11px;
+    background-color: #000;
+}
+
+/*  Video gallery thumbnails
+------------------------------------------------------------------------ */
+
+#video-gallery-thumbnails {
+    margin: 0 0 0 15px;
+}
+
+#video-gallery li {
+    position: relative;
+    float: left;
+    height: 63px;
+    width: 110px;
+}
+
+#video-gallery li a {
+    display: block;
+    float: left;
+    width: 110px;
+    height: 63px;
+    text-indent: -9999px;
+}
+
+#video-gallery li a:hover,
+#video-gallery li a.active-video {
+    background-position: 0 -74px;
+}
+
+#vid-exercise a {
+    background: url('../img/vid-th-exercise.png') no-repeat;
+}
+
+#vid-trailer-001 a {
+    background: url('../img/vid-th-trailer-001.png') no-repeat;
+}
+
+#vid-on-helena-geoffrey a {
+    background: url('../img/vid-th-working-with-helena-geoffrey.png') no-repeat;
+}
+
+#vid-what-attracted-her a {
+    background: url('../img/vid-th-what-attracted-her.png') no-repeat;
+}
+
+#getting-actors-involved a {
+    background: url('../img/vid-th-getting-actors-involved.png') no-repeat;
+}
+
+/*  News
+------------------------------------------------------------------------ */
+
+#press {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 594px;
+    height: 430px;
+    padding: 0 10px 0 10px;
+    z-index: 1000;
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
+    background: url('../img/bg-gallery.png') no-repeat;
+}
+
+#press-listing {
+    width: 545px;
+    height: 390px;
+    padding-right: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#press-listing li {
+    padding: 20px 0 10px;
+    margin: 0 10px;
+    background: url('../img/divider.png') no-repeat 0 100%;
+}
+
+#press-listing li.first {
+    padding: 0 0 10px;
+}
+
+#press-listing h4 {
+    font-size: 16px;
+    margin: 0 0 8px;
+    font-weight: normal;
+}
+
+#press-listing small {
+    display: block;
+    font-size: 10px;
+    margin: 0 0 8px;
+    line-height: 1;
+}
+
+#press-listing .press-image {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 0 0;
+}
+
+#press-listing p {
+    overflow: hidden;
+}
+
+#press-listing a {
+    color: #e7bb5f;
+}
+
+/*  Ustream
+------------------------------------------------------------------------ */
+
+#live #main {
+    top: 160px;
+}
+
+#ustream {
+    position: absolute;
+    top: 260px;
+    left: 0;
+    width: 960px;
+    height: 368px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+#ustream-video {
+    float: left;
+    width: 608px;
+    height: 368px;
+}
+
+#ustream-chat {
+    float: left;
+    width: 352px;
+    height: 368px;
+}
+
+/*  DVD
+------------------------------------------------------------------------ */
+
+.dvd {
+    top: 180px !important;
+    font-size: 18px;
+    height: 480px !important;
+    overflow: hidden !important;
+}
+
+.dvd h3 {
+    font-size: 18px;
+    margin: 0 0 18px;
+}
+
+.dvd ul {
+    list-style: disc;
+    padding: 0 0 0 21px;
+    margin: 0 0 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#buy-movie a {
+    float: left;
+    display: block;
+    width: 185px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #E7BB5F;
+    text-align: center;
+}
+
+#buy-movie a span {
+    display: block;
+    width: 140px;
+    padding: 4px 8px 0;
+    margin: 0 auto;
+    background-color: #404051;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    behavior: url(js/PIE.htc);
+    
+}
+
+#buy-movie a:hover {
+    color: #fff;
+}
+
+#buy-movie img {
+    margin: 0 3px 0 0;
+    vertical-align: middle;
+}
+
+#stutter {
+    font-size: 13px;
+}
+
+#stutter a {
+    color: #E7BB5F
+}
+
+/*  jScrollPane
+------------------------------------------------------------------------ */
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer{overflow:hidden;position:relative;}
+.jspPane{position:absolute;}
+#bio .jspVerticalBar{position:absolute;top:0;right:0;width:6px;height:100%;background: transparent url('../img/bg-jspVerticalBar.png');}
+.jspVerticalBar{position:absolute;top:0;right:0;width:6px;height:100%;background: transparent url('../img/bg-scrollbar.png');}
+.jspHorizontalBar{position:absolute;bottom:0;left:0;width:100%;height:16px;background:red;}
+.jspVerticalBar *,
+.jspHorizontalBar *{margin:0;padding:0;}
+.jspCap{display:none;}
+.jspHorizontalBar .jspCap{float:left;}
+.jspTrack{background: transparent;position:relative;}
+.jspDrag{background:#fff;position:relative;top:0;left:0;cursor:pointer;}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag{float:left;height:100%;}
+.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer;}
+.jspArrow.jspDisabled{cursor:default;background:#80808d;}
+.jspVerticalBar .jspArrow{height:16px;}
+.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%;}
+.jspVerticalBar .jspArrow:focus{outline:none;}
+.jspCorner{background:#eeeef4;float:left;height:100%;}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{margin:0 -3px 0 0;}
