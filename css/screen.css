@@ -162,12 +162,13 @@ sup {
 }
 
 #nav li a {
-    color: #333;
+    color: #aaa;
     text-decoration: none;
     font-family: Times, serif;
     text-transform: uppercase;
     margin: 0 8px 0;
     font-size: 12px;
+    font-weight: bold;
 }
 
 #nav li a.active {
@@ -332,14 +333,11 @@ body:after {
 #quotes {
     position: absolute;
     top: 160px;
-    left: 0;
-    width: 565px;
-    height: 35px;
+    left: 110px;
     overflow: hidden;
     z-index: 10000;
     text-align: center;
     margin-top: 10px;
-    font-size: 24px;
 }
 
 #quotes-award {
