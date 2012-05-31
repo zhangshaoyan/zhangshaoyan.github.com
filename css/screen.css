@@ -111,7 +111,7 @@ body:after {
     padding: 20px 20px 20px 20px;
     margin-left: -380px;
     /*background: url('../img/bg-bio.png') no-repeat;*/
-    background-color: black;
+    background-color: #0f0f13;
     z-index: 10000;
 }
  #bio em {
