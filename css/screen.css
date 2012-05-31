@@ -84,7 +84,7 @@ sup {
     width: 575px;
     padding-right: 10px;
     z-index: 1000;
-    color: #fff;
+    /*color: #fff;*/
     overflow: auto;
     text-align: justify;
 }
@@ -99,7 +99,7 @@ sup {
 body:after {
     /* Pre-load bg-image and lg bio images */
     display: none;
-    content: url('../img/bg-bio.png') url('../img/cast-anthony-andrews-lg.jpg') url('../img/cast-colin-firth-lg.jpg') url('../img/cast-dereck-jacobi-lg.jpg') url('../img/cast-dereck-jacobi-lg.jpg') url('../img/cast-geoffrey-rush-lg.jpg') url('../img/cast-guy-pearce-lg.jpg') url('../img/cast-helena-bonham-carter-lg.jpg') url('../img/cast-jennifer-ehle-lg.jpg') url('../img/cast-michael-gambon-lg.jpg') url('../img/cast-timothy-spall-lg.jpg')
+    /*content: url('../img/bg-bio.png') url('../img/cast-anthony-andrews-lg.jpg') url('../img/cast-colin-firth-lg.jpg') url('../img/cast-dereck-jacobi-lg.jpg') url('../img/cast-dereck-jacobi-lg.jpg') url('../img/cast-geoffrey-rush-lg.jpg') url('../img/cast-guy-pearce-lg.jpg') url('../img/cast-helena-bonham-carter-lg.jpg') url('../img/cast-jennifer-ehle-lg.jpg') url('../img/cast-michael-gambon-lg.jpg') url('../img/cast-timothy-spall-lg.jpg')*/
 }
 
 #bio {
