@@ -258,7 +258,7 @@ body:after {
 }
 
 #nav li a {
-    color: #333;
+    color: #aaa;
     text-decoration: none;
     font-family: Times, serif;
     text-transform: uppercase;
@@ -268,7 +268,7 @@ body:after {
 }
 
 #nav li a.active {
-    color: gray;
+    color: #ddd;
 }
 
 #nav li a:hover{
