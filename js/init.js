@@ -46,7 +46,7 @@ $("#bio-list a").click( function(e) {
 
 
 // Close bio overlay
-$("#close-bio, #overlay").click( function() {
+$("#overlay").click( function() {
     $("#bio, #overlay").fadeOut("slow");
 })
 
