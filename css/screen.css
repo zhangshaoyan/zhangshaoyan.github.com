@@ -178,7 +178,7 @@ body:after {
     padding: 20px 0;
     margin: 0 auto;
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: left;
     z-index: 1000;
 }
 
