@@ -45,4 +45,4 @@ el.vml[v].shape.stroked=false;el.vml[v].shape.appendChild(el.vml[v].fill);el.par
 el.vml.image.shape.fillcolor='none';el.vml.image.fill.type='tile';el.vml.color.fill.on=false;lib.attachHandlers(el);lib.giveLayout(el);lib.giveLayout(el.offsetParent);el.vmlInitiated=true;lib.applyVML(el);}};try{document.execCommand("BackgroundImageCache",false,true);}catch(r){}
 DD_belatedPNG.createVmlNameSpace();DD_belatedPNG.createVmlStyleSheet();
 
-DD_belatedPNG.fix("body, #movie-title, #start-date, #nav, #quotes img, #quotes-award img, #close-awards img, #video");
+DD_belatedPNG.fix("body, #movie-title, #start-date, #nav, #quotes, #quotes-award img, #close-awards img, #video, #bio-list img");
