@@ -199,11 +199,19 @@ body:after {
     color: #808080;
     text-transform: uppercase;
     font-size: 9px;
+    font-family: Times, serif;
 }
 
 #footer .footer-links a {
     color: #808080;
     text-decoration: none;
+    padding: 5px;
+}
+
+#footer .footer-links a:hover, 
+#footer .footer-links .active{
+    background-color: #75000c;
+    color: white;
 }
 
 #logo-weinstein {
@@ -279,7 +287,7 @@ body:after {
 }
 
 #nav li a:hover{
-    color: gray;
+    color: #ddd;
 }
 
 /*  Buy Album
