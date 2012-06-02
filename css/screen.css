@@ -8,7 +8,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     font: 15px/1.22 Times, serif;
     color: #ddd;
-    font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,"Lucida Grande","Luxi Sans",Arial,sans-serif;
 }
 
 #page {
@@ -94,6 +93,14 @@ sup {
     float: left;
     display: block;
     margin: 0 0 8px 14px;
+}
+
+#bio-list li div {
+    text-align: left;
+}
+
+#bio-list li div p {
+    margin-bottom:10px;
 }
 
 body:after {
