@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>21stcenturyfilmlab</title>
+    <meta charset="utf-8">
+    <meta name="description" content="a film by zhang shaoyan" />
+    <meta name="keywords" content="shaoyan, zhangshaoyan, " />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="image_src" href="img/fb-share.jpg" />
+    <link rel="stylesheet" type="text/css" media="all" href="../css/screen.css" />
+</head>
+<body id="home-page">
+    <div id="page">
+        <div class="wrapper">
+            <div id="masthead">
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="filmmakers.html">FILMMAKERS</a></li>
+                        <li><a href="press.html">NEWS&PRESS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>               
+                </div><!-- #nav -->
+            </div>
+
+            <div id="slideshow">
+                <div id="slides">
+                    <img src="http://farm8.staticflickr.com/7234/7299402394_287d10b500_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8150/7299372258_9019c8a3f7_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm8.staticflickr.com/7212/7299371716_a8b07e7e0f_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8005/7301752052_74e1689e55_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm8.staticflickr.com/7073/7301757046_cce9ba30bd_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8144/7302555180_e16fb64aab_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8163/7301753518_ef351bf999_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8004/7301754834_67872143ec_b.jpg" width="850" height="645" alt="" />
+                    <img src="http://farm9.staticflickr.com/8027/7301758040_34c473c3ed_b.jpg" width="850" height="645" alt="" />
+                </div>
+            </div><!-- #slideshow -->
+
+            <div id="movie-title" style="font-size: 65px; width: 560px; text-align: center; font-weight: bold; left:0px;">VIVRE LE FILM</div>
+
+            <div id="video">
+                <div id="video-object">
+                </div><!-- #video-object -->
+            </div><!-- #video -->
+            <div id="quotes" style=" overflow:visible; left:0px;font-size: 20px;width:560px">
+                THE POWER OF FILM GIVES ONE COURAGE TO<br/>
+                OVERCOME THE FEAR OF DEATH
+            </div>
+
+            <div id="footer">
+                <div class="footer-links" id="links-one" style="float:left">
+                    <p>
+                        <a href="#">ENG</a> | 
+                        <a href="cn">简体</a> | 
+                        <a href="tw">繁体</a>
+                    </p>
+                    <div style="margin-top:20px;">
+                        <img src="../img/facebook.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="../img/renren.jpg">
+                    </div>
+                </div>
+
+                <div style="float:right">
+                    <img src="img/credits.png">
+                </div>
+            </div><!-- #footer -->
+        </div><!-- .wrapper -->
+
+    </div><!-- #page -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <!-- <script src="js/swfobject.js"></script> -->
+    <script src="../js/default.js"></script>
+    <script src="../js/init.js"></script>
+    <script type='text/javascript' src='../player/jwplayer.js'></script>
+    <script type='text/javascript'>
+    jwplayer('video-object').setup({
+        'flashplayer': '../player/player.swf',
+        'file': '../film/vivrelefilm.flv',
+        'controlbar': 'over',
+        'skin': '../player/glow.zip',
+        'width': '560',
+        'height': '312'
+    });
+    </script>
+    <!--[if lt IE 7]>
+    <script type="text-javascript" src="js/pngfix.js"></script>
+    <![endif]-->
+
+    <div id="preload">
+        <img src="http://farm8.staticflickr.com/7234/7299402394_287d10b500_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8150/7299372258_9019c8a3f7_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm8.staticflickr.com/7212/7299371716_a8b07e7e0f_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8005/7301752052_74e1689e55_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm8.staticflickr.com/7073/7301757046_cce9ba30bd_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8144/7302555180_e16fb64aab_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8163/7301753518_ef351bf999_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8004/7301754834_67872143ec_b.jpg" width="850" height="645" alt="" />
+        <img src="http://farm9.staticflickr.com/8027/7301758040_34c473c3ed_b.jpg" width="850" height="645" alt="" />
+    </div><!-- #preload -->
+    <div style="z-index:-1;width:100%;height:645px; position:absolute;top:0px;left:0px;background-color:black"></div>
+</body>
+</html>
+
