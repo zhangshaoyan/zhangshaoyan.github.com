@@ -96,7 +96,15 @@ sup {
 }
 
 #bio-list li div {
+    width: 130px; 
+    font-size: 12px;
     text-align: left;
+}
+
+.bio-name {
+    text-align:center !important;
+    font-size: 14px !important;
+    margin-bottom:  10px;
 }
 
 #bio-list li div p {
