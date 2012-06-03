@@ -191,7 +191,7 @@ body:after {
 
 #footer #links-one {
     font-size: 14px;
-    clear: both;
+    float: left;
 }
 
 #footer .footer-links {
@@ -202,16 +202,21 @@ body:after {
     font-family: Times, serif;
 }
 
-#footer .footer-links a {
+#language a {
     color: #808080;
     text-decoration: none;
     padding: 5px;
 }
 
 #language a:hover, 
-#language .active{
+#language .active {
     background-color: #75000c;
     color: white !important;
+}
+
+#credits {
+    float: right;
+    margin-bottom: 20px;
 }
 
 #logo-weinstein {
