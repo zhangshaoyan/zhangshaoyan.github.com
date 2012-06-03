@@ -208,10 +208,10 @@ body:after {
     padding: 5px;
 }
 
-#footer .footer-links a:hover, 
-#footer .footer-links .active{
+#language a:hover, 
+#language .active{
     background-color: #75000c;
-    color: white;
+    color: white !important;
 }
 
 #logo-weinstein {
