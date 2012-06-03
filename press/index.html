@@ -4,10 +4,9 @@
     <title>21stcenturyfilmlab</title>
     <meta charset="utf-8">
     <meta name="description" content="a film by zhang shaoyan" />
-    <meta name="keywords" content="shaoyan, zhangshaoyan, " />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="image_src" href="img/fb-share.jpg" />
-    <link rel="stylesheet" type="text/css" media="all" href="../css/screen.css" />
+    <meta name="keywords" content="电影万岁, vivre le film, shaoyan, zhangshaoyan" />
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all" href="../assets/css/screen.css" />
 </head>
 <body id="home-page">
     <div id="page">
@@ -15,11 +14,11 @@
             <div id="masthead">
                 <div id="nav">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="filmmakers.html">FILMMAKERS</a></li>
-                        <li><a href="press.html">NEWS&PRESS</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="../">首页</a></li>
+                        <li><a href="../about">故事简介</a></li>
+                        <li><a href="../filmmakers">电影人</a></li>
+                        <li><a href="#" class="active">新闻&活动</a></li>
+                        <li><a href="../contact">联络</a></li>
                     </ul>               
                 </div><!-- #nav -->
             </div>
@@ -38,72 +37,45 @@
                 </div>
             </div><!-- #slideshow -->
 
-            <img id="movie-title" style="left: 30px;top: 80px;" src="../img/title-en.png">
+            <img id="movie-title" src="../assets/img/title.png" alt="电影万岁" /> 
 
-            <ul id="bio-list" style="width: 646px;">
-                <li>
-                    <a href="../bios/shaoyan-en.html"><img src="../img/creative-zhangshaoyan.png" width="130" height="170" alt="Creative Tom Hooper"></a>
-                    <div class="bio-name">ZHANG Shaoyan</div>
-                    <div >
-                        <p>BCogSci, The University of Hong Kong; MFA candidate, New York University.</p>
-                        <p>Main works: "Ghost Writer", "Vivre le FIlm", "Wave", "Travel Movies in Suzhou", "Thieves".</p>
-                    </div>
-                </li>
-                <li>
-                    <a href="../bios/sungaopeng-en.html"><img src="../img/creative-sungaopeng.png" width="130" height="170" alt="Creative Tom Hooper"></a>
-                    <div class="bio-name">SUN Gaopeng</div>
-                    <div>
-                        <p>BA, San Francisco State University; MFA, New York University.</p>
-                        <p>Main works: "Bridge", "The Detective Story", "The King of Fun", etc.</p>
-                    </div>
-                </li>
-                <li>
-                    <a href="../bios/songting-en.html"><img src="../img/creative-songting.png" width="130" height="170" alt="Creative Tom Hooper"></a>
-                    <div class="bio-name">SONG Ting</div>
-                    <div>
-                        <p>BA, University of International Business & Economics; MFA candidate, New York University.</p>
-                        <p>Main works: "Kinfe and Kinfe", "My Favorite Crane", "Nindy", "Bye, Bye Brother", etc.</p>
-                    </div>
-                </li>
-                <li>
-                    <a href="../bios/wangxin-en.html"><img src="../img/creative-wangxin.png" width="130" height="170" alt="Creative Tom Hooper"></a>
-                    <div class="bio-name">WANG Xin</div>
-                    <div>
-                        <p>BA, Hubei University; MFA candidate, New York University.</p>
-                        <p>Main works: "The Alien's First Step", "Sketch Book", etc.</p>
-                    </div>
-                </li>
-            </ul>
+            <div id="press">
+                <div id="press-listing" class="scrollpane">
+                    <ul>
+                                <!--
+                                <li class="first">
+                                    <h4><em>网站上线</em></h4>
+                                    <small>2012/5/31</small>
+                                    <p>网站正式上线</p>
+                                </li>
+                            -->
+                    </ul>
+                </div>
+            </div>
 
             <div id="footer">
                 <div class="footer-links" id="links-one" >
                     <p id="language">
-                        <a href="" class="active">ENG</a> | 
-                        <a href="/" >简体</a> | 
-                        <a href="/tw">繁体</a>
+                        <a href="en">ENG</a> | 
+                        <a href="#" class="active">简体</a> | 
+                        <a href="tw">繁体</a>
                     </p>
                     <div style="margin-top:20px;">
-                        <a href="http://www.facebook.com/VivreLeFilm"><img src="../img/facebook.jpg"></a>
-                        <a href="http://page.renren.com/601420199"><img src="../img/renren.jpg" style="margin-left: 24px"></a>
+                        <a href="http://www.facebook.com/VivreLeFilm"><img src="../assets/img/facebook.jpg"></a>
+                        <a href="http://page.renren.com/601420199"><img src="../assets/img/renren.jpg" style="margin-left: 24px"></a>
                     </div>
                 </div>
                 <div id="credits">
-                    <img src="../img/credits-en.png">
+                    <img src="../assets/img/credits-cn.png">
                 </div>
             </div><!-- #footer -->
         </div><!-- .wrapper -->
 
     </div><!-- #page -->
 
-    <div id="bio">
-        <div class="content">
-        </div>
-    </div><!-- #bio -->
-    <div id="overlay" style="opacity: 0.1; "></div><!-- #overlay -->
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script src="../js/default.js"></script>
-    <script src="../js/init.js"></script>
+    <script src="../assets/js/default.js"></script>
+    <script src="../assets/js/init.js"></script>
     <!--[if lt IE 7]>
     <script type="text-javascript" src="js/pngfix.js"></script>
     <![endif]-->

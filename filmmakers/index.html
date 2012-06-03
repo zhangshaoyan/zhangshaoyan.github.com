@@ -4,22 +4,21 @@
     <title>21stcenturyfilmlab</title>
     <meta charset="utf-8">
     <meta name="description" content="a film by zhang shaoyan" />
-    <meta name="keywords" content="shaoyan, zhangshaoyan, " />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="image_src" href="img/fb-share.jpg" />
-    <link rel="stylesheet" type="text/css" media="all" href="css/screen.css" />
+    <meta name="keywords" content="电影万岁, vivre le film, shaoyan, zhangshaoyan" />
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="all" href="../assets/css/screen.css" />
 </head>
-<body id="home-page">
+<body id="home-page" style="height:100%">
     <div id="page">
         <div class="wrapper">
             <div id="masthead">
                 <div id="nav">
                     <ul>
-                        <li><a href="index.html">首页</a></li>
-                        <li><a href="about.html">故事简介</a></li>
-                        <li><a href="filmmakers.html">电影人</a></li>
-                        <li><a href="press.html">新闻&活动</a></li>
-                        <li><a href="contact.html">联络</a></li>
+                        <li><a href="../">首页</a></li>
+                        <li><a href="../about">故事简介</a></li>
+                        <li><a href="#" class="active">电影人</a></li>
+                        <li><a href="../press">新闻&活动</a></li>
+                        <li><a href="../contact">联络</a></li>
                     </ul>               
                 </div><!-- #nav -->
             </div>
@@ -38,21 +37,27 @@
                 </div>
             </div><!-- #slideshow -->
 
-            <img id="movie-title" src="img/title.png" alt="电影万岁" /> 
+            <img id="movie-title" src="../assets/img/title.png" alt="电影万岁" /> 
 
-            <div id="press">
-                <div id="press-listing" class="scrollpane">
-                    <ul>
-                                <!--
-                                <li class="first">
-                                    <h4><em>网站上线</em></h4>
-                                    <small>2012/5/31</small>
-                                    <p>网站正式上线</p>
-                                </li>
-                            -->
-                    </ul>
-                </div>
-            </div>
+            <ul id="bio-list" style="width: 646px;">
+                <li>
+                    <a href="../bios/shaoyan-cn.html"><img src="../assets/img/creative-zhangshaoyan.png" width="130" height="170" alt="Creative Tom Hooper"></a>
+                    <img src="../assets/img/intro-shaoyan-cn.png" style="display:block"/>
+                </li>
+                <li>
+                    <a href="../bios/sungaopeng-cn.html"><img src="../assets/img/creative-sungaopeng.png" width="130" height="170" alt="Creative Tom Hooper"></a>
+                    <img src="../assets/img/intro-sungaopeng-cn.png" style="display:block"/>
+                </li>
+                <li>
+                    <a href="../bios/songting-cn.html"><img src="../assets/img/creative-songting.png" width="130" height="170" alt="Creative Tom Hooper"></a>
+                    <img src="../assets/img/intro-songting-cn.png" style="display:block"/>
+
+                </li>
+                <li>
+                    <a href="../bios/wangxin-cn.html"><img src="../assets/img/creative-wangxin.png" width="130" height="170" alt="Creative Tom Hooper"></a>
+                    <img src="../assets/img/intro-wangxin-cn.png" style="display:block"/>
+                </li>
+            </ul>
 
             <div id="footer">
                 <div class="footer-links" id="links-one" >
@@ -62,21 +67,27 @@
                         <a href="tw">繁体</a>
                     </p>
                     <div style="margin-top:20px;">
-                        <a href="http://www.facebook.com/VivreLeFilm"><img src="img/facebook.jpg"></a>
-                        <a href="http://page.renren.com/601420199"><img src="img/renren.jpg" style="margin-left: 24px"></a>
+                        <a href="http://www.facebook.com/VivreLeFilm"><img src="../assets/img/facebook.jpg"></a>
+                        <a href="http://page.renren.com/601420199"><img src="../assets/img/renren.jpg" style="margin-left: 24px"></a>
                     </div>
                 </div>
                 <div id="credits">
-                    <img src="img/credits-cn.png">
+                    <img src="../assets/img/credits-cn.png">
                 </div>
             </div><!-- #footer -->
         </div><!-- .wrapper -->
 
     </div><!-- #page -->
 
+    <div id="bio">
+        <div class="content">
+        </div>
+    </div><!-- #bio -->
+    <div id="overlay"></div><!-- #overlay -->
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script src="js/default.js"></script>
-    <script src="js/init.js"></script>
+    <script src="../assets/js/default.js"></script>
+    <script src="../assets/js/init.js"></script>
     <!--[if lt IE 7]>
     <script type="text-javascript" src="js/pngfix.js"></script>
     <![endif]-->

@@ -70,11 +70,13 @@ $("#close-album, #overlay").click(function(){
 
 
 // Highlight current page in nav
+/*
 $("#nav ul li a").each(function() {
     if(location.href.match(this.href)) {
         $(this).addClass("active");
     }
 });
+*/
 
 
 
