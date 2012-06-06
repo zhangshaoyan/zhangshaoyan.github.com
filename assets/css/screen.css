@@ -222,6 +222,11 @@ body:after {
     color: white !important;
 }
 
+#social,
+#donation {
+    margin-top: 20px;
+}
+
 #credits {
     float: right;
     margin-bottom: 20px;
